@@ -1,0 +1,15 @@
+@import "./styles/_variables";
+@import "./styles/_base";
+
+@import "src/partials/header/menu";
+
+@import "src/partials/header/header";
+@import "src/partials/header/menu";
+@import "src/partials/welcome/welcome";
+@import "src/partials/work/work";
+@import "src/partials/community/community";
+@import "src/partials/community/card";
+@import "src/partials/footer/footer";
+
+
+//<img src="url:./assets/es6-logo.svg" alt="JavaScript ES6" />

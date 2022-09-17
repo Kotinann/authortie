@@ -1,0 +1,63 @@
+.footer{
+  padding-top: 41px;
+  padding-bottom: 23px;
+  background: #2F2F2F;
+
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo svg{
+    width: 170px;
+  }
+
+
+  &__nav {
+
+  }
+
+  &__nav-list {
+    display: flex;
+
+  }
+
+  &__nav-item {
+    padding-right: 67px;
+  }
+
+  &__nav-link {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+
+    &:hover {
+      color: #3A85F4;
+    }
+
+  }
+
+  &__social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    & svg {
+      width: 20px;
+    }
+
+  }
+
+  &__icon-facebook {
+    margin-right: 33px;
+
+  }
+
+  &__icon-instagram {
+    margin-right: 33px;
+  }
+
+}

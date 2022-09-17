@@ -1,0 +1,56 @@
+.community {
+  padding-top: 75px;
+  padding-bottom: 100px;
+  background-color: #F9FBFF;
+
+  &__card {
+
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  &__subtitle {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 45px;
+    padding-bottom: 27px;
+  }
+
+  &__group-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 47px;
+    grid-row-gap: 47px;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+
+  }
+
+  &__button-footer {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #3A85F4;
+    border: 2px solid #3A85F4;
+    border-radius: 123px;
+    padding: 15px 63px;
+
+    &:hover {
+      color: #FFFFFF;
+      background-color: #3A85F4;
+    }
+  }
+}
+
+

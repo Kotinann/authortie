@@ -1,0 +1,60 @@
+.work {
+  padding-top: 100px;
+  padding-bottom: 75px;
+  background-color: #F9FBFF;
+
+  &__wrap {
+
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 24px;
+
+  }
+
+  &__item-wrap {
+    display: flex;
+    justify-content: space-between;
+
+    & img {
+      width: 266px;
+    }
+
+  }
+  &__item {
+
+    &:last-child {
+      .work__item-img {
+        &:after {
+          content: "";
+        }
+      }
+    }
+  }
+
+  &__item-subtitle {
+    width: 100%;
+    max-width: 234px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__item-img {
+    position: relative;
+
+    &:after {
+      position: absolute;
+      top: 45%;
+      right: -35%;
+      transform: translate(50%, 50%);
+      content: url("./assets/icons/arrow.svg");
+    }
+  }
+
+}

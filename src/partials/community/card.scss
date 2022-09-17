@@ -1,0 +1,246 @@
+.card {
+  width: 100%;
+  max-width: 550px;
+  background: #FEFEFF;
+  box-shadow: 0px 3px 17px rgba(43, 123, 211, 0.06);
+  border-radius: 10px;
+  padding: 14px 25px 25px 25px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    margin-bottom: 27px;
+  }
+
+  &__header-button {
+    display: block;
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-radius: 75px;
+
+    &_yellow {
+      color: #BC9300;
+      background: #FDFFE7;
+    }
+
+    &_green {
+      color: #00A880;
+      background: #EBFFFA;
+    }
+  }
+
+
+  &__title {
+    text-align: left;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 19px;
+    color: #2F2F2F;
+    margin-bottom: 27px;
+  }
+
+  &__comment-title {
+    text-align: left;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 15px;
+    color: #505050;
+    margin-bottom: 10px;
+  }
+
+  &__comment {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.005em;
+    margin-bottom: 27px;
+  }
+
+  &__reward-title {
+    text-align: left;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 15px;
+    color: #505050;
+    margin-bottom: 10px;
+  }
+
+  &__reward {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 54px;
+
+  }
+
+  &__reward-price {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    margin-right: 20px;
+  }
+
+  &__reward-button {
+    display: block;
+    border: 1px solid #3A85F4;
+    border-radius: 75px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #3A85F4;
+    padding: 7px 21px;
+
+    &:hover {
+      color: #FFFFFF;
+      background-color: #3A85F4;
+    }
+
+  }
+
+
+  &__key {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 15px;
+    width: 100%;
+
+    & svg {
+      display: block;
+      margin-right: 8px;
+    }
+  }
+
+  &__button-key {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #2F2F2F;
+    background: #F3F3F3;
+    border-radius: 75px;
+    padding: 8px 15px;
+    flex-shrink: 0;
+  }
+
+
+  &__name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #DEDEDE;
+    border-bottom: 1px solid #DEDEDE;
+    margin-bottom: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    }
+
+  &__name-group {
+    display: flex;
+  }
+
+  &__name-img {
+    display: block;
+    width: 100%;
+    max-width: 80px;
+    margin-right: 10px;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__description {
+    flex-shrink: 0;
+  }
+
+  &__description-name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 4px;
+  }
+
+  &__description-degree {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 5px;
+  }
+
+  &__description-univer {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &__name-rating {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #3A85F4;
+
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__footer-button {
+    background: #3A85F4;
+    border-radius: 123px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 12px 37px 10px 38px;
+
+
+    &:hover {
+      background-color: $link-hover;
+    }
+  }
+
+  &__footer-button1 {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #D9D9D9;
+    border-radius: 123px;
+    padding: 12px 27px 10px 21px;
+
+
+
+    & svg {
+      display: block;
+      margin-right: 3px;
+    }
+  }
+
+}
