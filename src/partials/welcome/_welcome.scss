@@ -4,10 +4,27 @@
   background: url("./assets/images/welcome-background.png");
   opacity: 0.8;
 
+  @media screen and (max-width: 1023px) {
+    background-position: 23% 27%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-top: 31px;
+    padding-bottom: 0px;
+  }
+
   &__wrap {
     display: flex;
     align-items: center;
 
+    @media screen and (max-width: 1023px) {
+    }
+    @media screen and (max-width: 767px) {
+      display: block;
+    }
   }
 
   &__title {
@@ -18,6 +35,19 @@
     font-size: 50px;
     line-height: 53px;
     margin-bottom: 33px;
+
+    @media screen and (max-width: 1023px) {
+      width: 365px;
+      font-size: 28px;
+      line-height: 30px;
+      margin-bottom: 22px;
+    }
+    @media screen and (max-width: 767px) {
+      width: 260px;
+      font-size: 24px;
+      line-height: 25px;
+      margin-bottom: 15px;
+    }
   }
 
   &__subtitle {
@@ -27,6 +57,33 @@
     font-size: 20px;
     line-height: 25px;
    margin-bottom: 33px;
+
+    @media screen and (max-width: 1023px) {
+      display: none;
+
+    }
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+
+  }
+
+  &__subtitle-mobile {
+    display: none;
+
+    @media screen and (max-width: 1023px) {
+      display: block;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      margin-bottom: 22px;
+      width: 311px;
+    }
+      @media screen and (max-width: 767px) {
+        width: 240px;
+        margin-bottom: 15px;
+      }
+
   }
 
   &__button-group {
@@ -44,10 +101,50 @@
     border-radius: 123px;
     color: #FFFFFF;
     transition: all 0.2s ease-in-out;
+    text-transform: uppercase;
 
 
     &:hover {
       background-color: $link-hover;
+    }
+
+    @media screen and (max-width: 1023px) {
+      font-size: 13px;
+      line-height: 15px;
+      letter-spacing: 0.04em;
+    }
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+
+  }
+
+  &__button-mobile {
+    display: none;
+
+
+    @media screen and (max-width: 767px) {
+      display: block;
+      width: 170px;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 15px;
+      text-align: center;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      background: #3A85F4;
+      border-radius: 123px;
+      padding: 10px 20px;
+    }
+
+  }
+
+  &__image {
+
+    @media screen and (max-width: 767px) {
+
     }
   }
 
@@ -56,6 +153,17 @@
     width: 100%;
     max-width: 920px;
     height: auto;
+
+    @media screen and (max-width: 1023px) {
+      width: 100%;
+      max-width: 460px;
+    }
+    @media screen and (max-width: 767px) {
+      margin-top: -9%;
+      margin-left: auto;
+      width: 100%;
+      max-width: 205px;
+    }
   }
 }
 

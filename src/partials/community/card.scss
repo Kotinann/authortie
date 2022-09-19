@@ -2,9 +2,19 @@
   width: 100%;
   max-width: 550px;
   background: #FEFEFF;
-  box-shadow: 0px 3px 17px rgba(43, 123, 211, 0.06);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.06);
   border-radius: 10px;
   padding: 14px 25px 25px 25px;
+
+  @media screen and (max-width: 1023px) {
+    width: 356px;
+    padding: 15px 20px 20px 20px;
+
+  }
+  @media screen and (max-width: 767px) {
+    width: 340px;
+  }
+
 
   &__header {
     display: flex;
@@ -12,6 +22,17 @@
     flex-wrap: wrap;
     column-gap: 10px;
     margin-bottom: 27px;
+
+
+    @media screen and (max-width: 1023px) {
+      margin-bottom: 15px;
+    }
+
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+
   }
 
   &__header-button {
@@ -29,6 +50,11 @@
     &_yellow {
       color: #BC9300;
       background: #FDFFE7;
+
+      @media screen and (max-width: 1023px) {
+        margin-bottom: 5px;
+      }
+
     }
 
     &_green {
@@ -45,6 +71,12 @@
     line-height: 19px;
     color: #2F2F2F;
     margin-bottom: 27px;
+
+    @media screen and (max-width: 1023px) {
+      font-size: 16px;
+      line-height: 17px;
+      margin-bottom: 15px;
+    }
   }
 
   &__comment-title {
@@ -54,6 +86,12 @@
     line-height: 15px;
     color: #505050;
     margin-bottom: 10px;
+
+    @media screen and (max-width: 1023px) {
+      font-size: 14px;
+      line-height: 14px;
+    }
+
   }
 
   &__comment {
@@ -62,6 +100,11 @@
     line-height: 17px;
     letter-spacing: -0.005em;
     margin-bottom: 27px;
+
+    @media screen and (max-width: 1023px) {
+      font-size: 12px;
+      line-height: 14px;
+    }
   }
 
   &__reward-title {
@@ -71,6 +114,11 @@
     line-height: 15px;
     color: #505050;
     margin-bottom: 10px;
+
+    @media screen and (max-width: 1023px) {
+      font-size: 14px;
+      line-height: 14px;
+    }
   }
 
   &__reward {
@@ -78,6 +126,9 @@
     align-items: center;
     column-gap: 10px;
     margin-bottom: 54px;
+    @media screen and (max-width: 1023px) {
+      overflow-x: auto;
+    }
 
   }
 
@@ -86,6 +137,7 @@
     font-size: 14px;
     line-height: 14px;
     margin-right: 20px;
+
   }
 
   &__reward-button {
@@ -101,6 +153,10 @@
     &:hover {
       color: #FFFFFF;
       background-color: #3A85F4;
+    }
+
+    @media screen and (max-width: 1023px) {
+      flex-shrink: 0;
     }
 
   }
@@ -142,8 +198,9 @@
     border-bottom: 1px solid #DEDEDE;
     margin-bottom: 15px;
     padding-top: 12px;
-    padding-bottom: 12px;
-    }
+    padding-bottom: 10px;
+
+  }
 
   &__name-group {
     display: flex;
@@ -160,10 +217,15 @@
       width: 100%;
       height: auto;
     }
+    @media screen and (max-width: 1023px) {
+      width: 67px;
+    }
+
   }
 
   &__description {
     flex-shrink: 0;
+
   }
 
   &__description-name {
@@ -171,6 +233,13 @@
     font-size: 16px;
     line-height: 19px;
     margin-bottom: 4px;
+
+    @media screen and (max-width: 1023px) {
+      font-size: 14px;
+      line-height: 16px;
+      margin-bottom: 7px;
+    }
+
   }
 
   &__description-degree {
@@ -178,12 +247,24 @@
     font-size: 14px;
     line-height: 16px;
     margin-bottom: 5px;
+
+    @media screen and (max-width: 1023px) {
+      font-size: 12px;
+      line-height: 14px;
+      margin-bottom: 5px;
+    }
   }
 
   &__description-univer {
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
+
+    @media screen and (max-width: 1023px) {
+      font-size: 12px;
+      line-height: 14px;
+
+    }
   }
 
   &__name-rating {
@@ -194,12 +275,17 @@
     text-align: center;
     color: #3A85F4;
 
+    @media screen and (max-width: 1023px) {
+      display: none;
+    }
+
   }
 
   &__footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
   }
 
   &__footer-button {
@@ -215,10 +301,17 @@
     color: #FFFFFF;
     padding: 12px 37px 10px 38px;
 
-
     &:hover {
       background-color: $link-hover;
     }
+
+    @media screen and (max-width: 1023px) {
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.02em;
+      padding: 10px 22px;
+    }
+
   }
 
   &__footer-button1 {
@@ -235,12 +328,34 @@
     border-radius: 123px;
     padding: 12px 27px 10px 21px;
 
-
-
     & svg {
       display: block;
       margin-right: 3px;
+
+      @media screen and (max-width: 1023px) {
+        display: none;
+      }
     }
+
+    @media screen and (max-width: 1023px) {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+  }
+
+  &__footer-button2 svg{
+
+    @media screen and (max-width: 1023px) {
+      width: 35px;
+
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 32px;
+
+    }
+
   }
 
 }
