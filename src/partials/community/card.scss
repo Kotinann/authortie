@@ -126,6 +126,7 @@
     align-items: center;
     column-gap: 10px;
     margin-bottom: 54px;
+
     @media screen and (max-width: 1023px) {
       overflow-x: auto;
     }
@@ -143,6 +144,7 @@
   &__reward-button {
     display: block;
     border: 1px solid #3A85F4;
+    text-align: center;
     border-radius: 75px;
     font-weight: 400;
     font-size: 14px;
@@ -153,8 +155,8 @@
     &:hover {
       color: #FFFFFF;
       background-color: #3A85F4;
-    }
 
+    }
     @media screen and (max-width: 1023px) {
       flex-shrink: 0;
     }

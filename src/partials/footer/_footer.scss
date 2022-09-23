@@ -11,58 +11,82 @@
 
   &__wrap {
     display: flex;
+    grid-gap: 67px;
 
     @media screen and (max-width: 1023px) {
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
+      grid-gap: 15px;
+
     }
 
     @media screen and (max-width: 767px) {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
+     display: grid;
+      grid-template-columns: 1fr 2fr ;
     }
 
 
   }
 
   &__logo {
-    margin-right: 67px;
 
     svg {
-      width: 170px;
+      width: 100%;
+      max-width: 170px;
+
+      @media screen and (max-width: 1023px) {
+        width: 135px;
+      }
     }
 
     @media screen and (max-width: 1023px) {
+
     }
 
     @media screen and (max-width: 767px) {
+      margin-left: 18px;
+      grid-column: 1 / 3;
+      grid-row: 3 / 4;
+
     }
   }
 
   &__nav {
 
+    @media screen and (max-width: 767px) {
+      grid-column: 1 / 4;
+      grid-row: 1 / 4;
+    }
   }
 
   &__nav-list {
     display: flex;
+    grid-gap: 67px;
 
     @media screen and (max-width: 1023px) {
+      border-bottom: 1px solid #DEDEDE;
     }
 
     @media screen and (max-width: 767px) {
-      display: block;
+      border: none;
+      display: grid;
+      grid-gap: 10px;
     }
-
   }
 
   &__nav-item {
-    margin-right: 67px;
+
 
     @media screen and (max-width: 1023px) {
+      margin-bottom: 19px;
     }
 
     @media screen and (max-width: 767px) {
-      margin-right: 20px;
       margin-bottom: 10px;
       text-align: right;
+
+
     }
   }
 
@@ -78,9 +102,8 @@
     }
 
     @media screen and (max-width: 1023px) {
-    }
-
-    @media screen and (max-width: 767px) {
+      font-size: 12px;
+      line-height: 14px;
     }
 
   }
@@ -89,9 +112,14 @@
     margin-left: auto;
 
     @media screen and (max-width: 1023px) {
+      margin: 0 auto;
     }
 
     @media screen and (max-width: 767px) {
+
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+
     }
   }
 
@@ -101,36 +129,23 @@
     justify-content: flex-end;
     grid-gap: 33px;
 
-    @media screen and (max-width: 1023px) {
-    }
-
-    @media screen and (max-width: 767px) {
-      justify-content: flex-start;
-    }
-
     & svg {
-      width: 20px;
+      width: 100%;
+      max-width: 20px;
+
+      @media screen and (max-width: 1023px) {
+        width: 14px;
+      }
     }
+
   }
 
   &__icon-facebook {
-
-    @media screen and (max-width: 1023px) {
-    }
-
-    @media screen and (max-width: 767px) {
-    }
 
   }
 
   &__icon-instagram {
 
-
-    @media screen and (max-width: 1023px) {
-    }
-
-    @media screen and (max-width: 767px) {
-    }
   }
 
 }
