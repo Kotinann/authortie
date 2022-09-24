@@ -7,6 +7,12 @@
   z-index: 900;
   background: rgba(0, 0, 0, 0.38);
   width: 100%;
+  overflow: hidden;
+
+
+  @media screen and (max-width: 767px) {
+
+  }
 
 
   &__form-wrap {
@@ -19,6 +25,15 @@
     left: calc((100vw - 460px) / 2);
     background: #F9FBFF;
     border-radius: 10px;
+
+
+
+    @media screen and (max-width: 767px) {
+      top: 0;
+      left: 0;
+      border-radius:0;
+      height: 100vh;
+    }
   }
 
   &__close {
@@ -32,6 +47,23 @@
     justify-content: center;
     position: fixed;
     cursor: pointer;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &__form-logo {
+    display: none;
+
+    @media screen and (max-width: 767px) {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+     img {
+       width: 140px;
+     }
   }
 
   &__form-header {
@@ -147,13 +179,28 @@
     background: url(./assets/icons/password-menu.svg) 0 0 no-repeat;
   }
 
+  &__password-control.view {
+    background: url(./assets/icons/no-view.svg) 0 0 no-repeat;
+  }
+
+  &__forgot-password a {
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.01em;
+    color: #2C80FF;
+    margin-bottom: 40px;
+  }
+
 
   &__form-description {
     display: flex;
     align-items: flex-start;
     grid-gap: 14px;
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 13px;
@@ -194,6 +241,11 @@
       background-color: $link-hover;
       opacity: 0.8;
     }
+
+    @media screen and (max-width: 767px) {
+      font-size: 16px;
+      line-height: 19px;
+    }
   }
 
 
@@ -213,6 +265,10 @@
     align-items: center;
     justify-content: center;
     grid-gap: 22px;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
   }
 
   &__social {
@@ -226,5 +282,21 @@
     height: 36px;
   }
 
+  &__form-footer {
+    display: none;
+
+    @media screen and (max-width: 767px) {
+      display: flex;
+      justify-content: center;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: -0.01em;
+      text-decoration-line: underline;
+      color: #D5D5D5;
+    }
+  }
 
 }
